@@ -1,0 +1,18 @@
+@import url("import.css");
+@import url("countries.css");
+@import url("pendu.css");
+@import url("todolist.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0 2em;
+}
+
+nav{
+    padding: 1em;
+}

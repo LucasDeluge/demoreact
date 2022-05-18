@@ -1,0 +1,44 @@
+.btn-letter {
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: larger;
+  padding: 1em;
+  width: 7vw; }
+  .btn-letter:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+#hangman-section {
+  display: flex;
+  align-content: flex-end; }
+  #hangman-section .hangman-step {
+    height: 135px;
+    width: 140px;
+    background-image: url("../img/Le-Pendu-removebg-preview.png");
+    background-position: 5% 20%;
+    overflow: hidden;
+    transition-property: background-position;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+    background-color: rgba(175, 183, 203, 0.6);
+    margin: 1em auto; }
+
+#restartDiv {
+  text-align: center; }
+  #restartDiv p {
+    font-size: 3em;
+    font-weight: bolder;
+    text-transform: capitalize;
+    text-shadow: black 1px 1px;
+    display: inline-block;
+    vertical-align: middle; }
+    #restartDiv p:first-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh; }
+    #restartDiv p img {
+      height: 100%; }
+
+.hide {
+  display: none; }
