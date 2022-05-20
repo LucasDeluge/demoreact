@@ -1,54 +1,91 @@
-.red{
-    color: red;
+.red {
+  color: red;
 }
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-  }
-  
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .game-info {
-    margin-left: 20px;
-  }
-  
+  font: 14px "Century Gothic", Futura, sans-serif;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.btnLetters {
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  margin: 2px;
+  color: black;
+  border-radius: 50%;
+  border: 2px solid silver;
+  padding-bottom: 3px;
+}
+
+.divKeyboard {
+  width: 40vw;
+  margin: auto;
+  padding-top: 375px;
+}
+
+.mainHang {
+  background-image: url("./Components/Images/clavier.jpg");
+  background-size: cover;
+  width: 94vw;
+  height: 90vh;
+  text-align: center;
+}
+
+.life {
+  width: 70px;
+  margin-top: 3rem;
+}
+
+.divWord {
+  padding-top: 15px;
+  letter-spacing: 2px;
+  font-size: 2em;
+  color: black;
+  text-transform: uppercase;
+}

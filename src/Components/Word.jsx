@@ -1,0 +1,77 @@
+const tabWord = [
+  "fermentation",
+  "crucifix",
+  "possession",
+  "diable",
+  "pretre",
+  "exorciseur",
+  "croix",
+  "demoniaque",
+  "serpent",
+  "bouteille",
+  "television",
+  "guitare",
+  "javascript",
+  "developpement",
+  "cafetiere",
+  "fromage",
+  "cuisine",
+  "echelle",
+  "chaise",
+  "table",
+  "refrigerateur",
+  "console",
+  "plante",
+  "mariage",
+  "canape",
+  "voiture",
+  "boulangerie",
+  "tablette",
+  "ardoise",
+  "escalier",
+  "magazine",
+  "zozoteur",
+  "zigoteau",
+  "bronzage",
+  "azimut",
+  "sorciere",
+  "abomination",
+  "accordeoniste",
+  "accouchement",
+  "xylophone",
+  "developpement-web",
+  "recapitulation",
+  "enumeration",
+  "statistique",
+  "immatriculation",
+  "representation",
+  "denombrement",
+  "nomenclature",
+  "bibliographie",
+  "vasectomie",
+  "cesarienne",
+  "abdominoplastie",
+  "adenocarcinome",
+  "agoraphobie",
+  "algodystrophie",
+  "alzheimer",
+  "appendicectomie",
+  "bronchiolite",
+  "broncho-pneumopathie",
+  "cephalorachidien",
+  "demineralisation",
+  "desoxyribonucleique",
+  "drepanocytose",
+];
+
+export default function Word() {
+  const result = [];
+  let wordChoice = Math.floor(Math.random() * tabWord.length);
+  wordChoice = tabWord[wordChoice];
+  const word = wordChoice.split("");
+  while (word.length > 0) {
+    const letter = word.shift();
+    result.push(letter);
+  }
+  return result;
+}
